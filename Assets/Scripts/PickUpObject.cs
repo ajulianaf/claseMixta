@@ -11,7 +11,7 @@ public class PickUpObject : MonoBehaviour
     {
         if (ObjectToPickUp != null && ObjectToPickUp.GetComponent<AgarrarObjeto>().esAgarrable == true && PickedObject == null) 
         {
-            if (Input.GetButton("Fire1"))
+            if (Input.GetButtonDown("Fire1"))
             {
                 PickedObject = ObjectToPickUp;
                 PickedObject.GetComponent<AgarrarObjeto>().esAgarrable = false;
